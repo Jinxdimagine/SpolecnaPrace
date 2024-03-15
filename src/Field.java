@@ -11,9 +11,10 @@ public class Field extends JFrame {
         frame =new JFrame();
         frame.setSize(600,600);
         frame.setResizable(false);
-        frame.setVisible(true);
-
+        addbuttons();
+        addPanel();
         frame.add(panel);
+        frame.setVisible(true);
     }
 
     private void addbuttons(){
