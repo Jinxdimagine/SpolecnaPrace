@@ -15,6 +15,7 @@ public class Field extends JFrame {
         addbuttons();
         addPanel();
         frame.add(panel);
+        game = new Game();
         frame.setVisible(true);
     }
 
