@@ -38,6 +38,10 @@ public class Field extends JFrame {
         functionsButtons[6] = button7;
         functionsButtons[7] = button8;
         functionsButtons[8] = button9;
+        for(JButton fuctionsButtons :functionsButtons){
+            fuctionsButtons.setFocusable(false);
+            fuctionsButtons.addActionListener(game);
+        }
     }
 
     private void addPanel(){
