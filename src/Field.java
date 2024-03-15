@@ -12,6 +12,7 @@ public class Field extends JFrame {
         frame.setSize(600,600);
         frame.setResizable(false);
         frame.setVisible(true);
+
         frame.add(panel);
     }
 
@@ -36,5 +37,13 @@ public class Field extends JFrame {
         functionsButtons[8] = button9;
     }
 
+    private void addPanel(){
+        panel = new JPanel();
+        panel.setBounds(0,0,600,600);
+        panel.setLayout(new GridLayout(3,3,0,0));
+        for(JButton fuctionsButtons :functionsButtons){
+            panel.add(fuctionsButtons);
+        }
+    }
 
 }
